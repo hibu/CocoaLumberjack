@@ -79,24 +79,16 @@
 
 static void *const GlobalLoggingQueueIdentityKey = (void *)&GlobalLoggingQueueIdentityKey;
 
-void dispatch_queue_set_specific_ios4(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor);
-void* dispatch_get_specific_ios4(const void *key);
+void dispatch_queue_set_specific(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor);
+void* dispatch_get_specific(const void *key);
 
 
-void dispatch_queue_set_specific_ios4(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor) {
-	if (iOS4OrLater && !iOS5OrLater) {
-		dispatch_set_context( queue, context);
-	} else {
-		dispatch_queue_set_specific(queue, key, context, destructor);
-	}
+void dispatch_queue_set_specific(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor) {
+    dispatch_queue_set_specific(queue, key, context, destructor);
 }
 
-void* dispatch_get_specific_ios4(const void *key) {
-	if (iOS4OrLater && !iOS5OrLater) {
-		return dispatch_get_context( dispatch_get_current_queue() );
-	} else {
-		return dispatch_get_specific(key);
-	}
+void* dispatch_get_specific(const void *key) {
+    return dispatch_get_specific(key);
 }
 
 
@@ -168,7 +160,7 @@ static unsigned int numProcessors;
 		loggingGroup = dispatch_group_create();
 		
 		void *nonNullValue = GlobalLoggingQueueIdentityKey; // Whatever, just not null
-		dispatch_queue_set_specific_ios4(loggingQueue, GlobalLoggingQueueIdentityKey, nonNullValue, NULL);
+		dispatch_queue_set_specific(loggingQueue, GlobalLoggingQueueIdentityKey, nonNullValue, NULL);
 		
 		queueSemaphore = dispatch_semaphore_create(LOG_MAX_QUEUE_SIZE);
 		
@@ -990,7 +982,7 @@ static char *dd_str_copy(const char *str)
 		void *key = (__bridge void *)self;
 		void *nonNullValue = (__bridge void *)self;
 		
-		dispatch_queue_set_specific_ios4(loggerQueue, key, nonNullValue, NULL);
+		dispatch_queue_set_specific(loggerQueue, key, nonNullValue, NULL);
 	}
 	return self;
 }
@@ -1116,13 +1108,13 @@ static char *dd_str_copy(const char *str)
 
 - (BOOL)isOnGlobalLoggingQueue
 {
-	return (dispatch_get_specific_ios4(GlobalLoggingQueueIdentityKey) != NULL);
+	return (dispatch_get_specific(GlobalLoggingQueueIdentityKey) != NULL);
 }
 
 - (BOOL)isOnInternalLoggerQueue
 {
 	void *key = (__bridge void *)self;
-	return (dispatch_get_specific_ios4(key) != NULL);
+	return (dispatch_get_specific(key) != NULL);
 }
 
 @end
