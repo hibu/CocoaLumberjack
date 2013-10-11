@@ -79,18 +79,6 @@
 
 static void *const GlobalLoggingQueueIdentityKey = (void *)&GlobalLoggingQueueIdentityKey;
 
-void dispatch_queue_set_specific(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor);
-void* dispatch_get_specific(const void *key);
-
-
-void dispatch_queue_set_specific(dispatch_queue_t queue, const void* key, void *context, dispatch_function_t destructor) {
-    dispatch_queue_set_specific(queue, key, context, destructor);
-}
-
-void* dispatch_get_specific(const void *key) {
-    return dispatch_get_specific(key);
-}
-
 
 @interface DDLoggerNode : NSObject {
 @public 
