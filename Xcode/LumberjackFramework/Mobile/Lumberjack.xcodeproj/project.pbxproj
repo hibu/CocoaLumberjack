@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3130A01844B265002E953B /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DA31309E1844B265002E953B /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA3130A11844B265002E953B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA31309F1844B265002E953B /* DDMultiFormatter.m */; };
 		DC58E48C14DC70CF006B16E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58E48B14DC70CF006B16E2 /* Foundation.framework */; };
 		DC58E4AB14DC7176006B16E2 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E49B14DC7176006B16E2 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC58E4AC14DC7176006B16E2 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E49C14DC7176006B16E2 /* DDAbstractDatabaseLogger.m */; };
@@ -18,10 +20,10 @@
 		DC58E4B214DC7176006B16E2 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A214DC7176006B16E2 /* DDLog.m */; };
 		DC58E4B314DC7176006B16E2 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E4A314DC7176006B16E2 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC58E4B414DC7176006B16E2 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A414DC7176006B16E2 /* DDTTYLogger.m */; };
-		DC58E4B514DC7176006B16E2 /* ContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E4A614DC7176006B16E2 /* ContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC58E4B614DC7176006B16E2 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A714DC7176006B16E2 /* ContextFilterLogFormatter.m */; };
-		DC58E4B714DC7176006B16E2 /* DispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E4A814DC7176006B16E2 /* DispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC58E4B814DC7176006B16E2 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A914DC7176006B16E2 /* DispatchQueueLogFormatter.m */; };
+		DC58E4B514DC7176006B16E2 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E4A614DC7176006B16E2 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC58E4B614DC7176006B16E2 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A714DC7176006B16E2 /* DDContextFilterLogFormatter.m */; };
+		DC58E4B714DC7176006B16E2 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E4A814DC7176006B16E2 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC58E4B814DC7176006B16E2 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4A914DC7176006B16E2 /* DDDispatchQueueLogFormatter.m */; };
 		DC58E4B914DC727F006B16E2 /* Lumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = DC58E49014DC70CF006B16E2 /* Lumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC58E4C414DC8BE2006B16E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58E4C314DC8BE2006B16E2 /* UIKit.framework */; };
 		DC58E4C514DC8BE2006B16E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58E48B14DC70CF006B16E2 /* Foundation.framework */; };
@@ -32,6 +34,7 @@
 		DC58E4D614DC8BE2006B16E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58E4D514DC8BE2006B16E2 /* ViewController.m */; };
 		DC58E4D914DC8BE2006B16E2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC58E4D714DC8BE2006B16E2 /* ViewController.xib */; };
 		DC58E4E314DC8D0B006B16E2 /* libLumberjack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC58E48814DC70CF006B16E2 /* libLumberjack.a */; };
+		DCD6EAC816FFC0A800710668 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD6EAC716FFC0A800710668 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA31309E1844B265002E953B /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		DA31309F1844B265002E953B /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		DADEC5BA182CE2D5003DF172 /* DDLog+LOGV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "../../../../Lumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
 		DC58E48814DC70CF006B16E2 /* libLumberjack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLumberjack.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC58E48B14DC70CF006B16E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC58E48F14DC70CF006B16E2 /* Lumberjack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lumberjack-Prefix.pch"; sourceTree = "<group>"; };
@@ -59,10 +65,10 @@
 		DC58E4A214DC7176006B16E2 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = ../../../../Lumberjack/DDLog.m; sourceTree = "<group>"; };
 		DC58E4A314DC7176006B16E2 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = ../../../../Lumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
 		DC58E4A414DC7176006B16E2 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = ../../../../Lumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
-		DC58E4A614DC7176006B16E2 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		DC58E4A714DC7176006B16E2 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		DC58E4A814DC7176006B16E2 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		DC58E4A914DC7176006B16E2 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		DC58E4A614DC7176006B16E2 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		DC58E4A714DC7176006B16E2 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		DC58E4A814DC7176006B16E2 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		DC58E4A914DC7176006B16E2 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		DC58E4C114DC8BE2006B16E2 /* LibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC58E4C314DC8BE2006B16E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC58E4C614DC8BE2006B16E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +81,7 @@
 		DC58E4D414DC8BE2006B16E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DC58E4D514DC8BE2006B16E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DC58E4D814DC8BE2006B16E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DCD6EAC716FFC0A800710668 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 		DC58E47D14DC70CF006B16E2 = {
 			isa = PBXGroup;
 			children = (
+				DCD6EAC716FFC0A800710668 /* Default-568h@2x.png */,
 				DC58E48D14DC70CF006B16E2 /* Lumberjack */,
 				DC58E48E14DC70CF006B16E2 /* Supporting Files */,
 				DC58E4C814DC8BE2006B16E2 /* LibTest */,
@@ -136,6 +144,7 @@
 				DC58E49014DC70CF006B16E2 /* Lumberjack.h */,
 				DC58E4A114DC7176006B16E2 /* DDLog.h */,
 				DC58E4A214DC7176006B16E2 /* DDLog.m */,
+				DADEC5BA182CE2D5003DF172 /* DDLog+LOGV.h */,
 				DC58E49B14DC7176006B16E2 /* DDAbstractDatabaseLogger.h */,
 				DC58E49C14DC7176006B16E2 /* DDAbstractDatabaseLogger.m */,
 				DC58E49D14DC7176006B16E2 /* DDASLLogger.h */,
@@ -161,10 +170,12 @@
 		DC58E4A514DC7176006B16E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DC58E4A614DC7176006B16E2 /* ContextFilterLogFormatter.h */,
-				DC58E4A714DC7176006B16E2 /* ContextFilterLogFormatter.m */,
-				DC58E4A814DC7176006B16E2 /* DispatchQueueLogFormatter.h */,
-				DC58E4A914DC7176006B16E2 /* DispatchQueueLogFormatter.m */,
+				DC58E4A614DC7176006B16E2 /* DDContextFilterLogFormatter.h */,
+				DC58E4A714DC7176006B16E2 /* DDContextFilterLogFormatter.m */,
+				DC58E4A814DC7176006B16E2 /* DDDispatchQueueLogFormatter.h */,
+				DC58E4A914DC7176006B16E2 /* DDDispatchQueueLogFormatter.m */,
+				DA31309E1844B265002E953B /* DDMultiFormatter.h */,
+				DA31309F1844B265002E953B /* DDMultiFormatter.m */,
 			);
 			name = Extensions;
 			path = ../../../../Lumberjack/Extensions;
@@ -204,9 +215,10 @@
 				DC58E4AB14DC7176006B16E2 /* DDAbstractDatabaseLogger.h in Headers */,
 				DC58E4B114DC7176006B16E2 /* DDLog.h in Headers */,
 				DC58E4B914DC727F006B16E2 /* Lumberjack.h in Headers */,
-				DC58E4B514DC7176006B16E2 /* ContextFilterLogFormatter.h in Headers */,
+				DC58E4B514DC7176006B16E2 /* DDContextFilterLogFormatter.h in Headers */,
 				DC58E4AD14DC7176006B16E2 /* DDASLLogger.h in Headers */,
-				DC58E4B714DC7176006B16E2 /* DispatchQueueLogFormatter.h in Headers */,
+				DA3130A01844B265002E953B /* DDMultiFormatter.h in Headers */,
+				DC58E4B714DC7176006B16E2 /* DDDispatchQueueLogFormatter.h in Headers */,
 				DC58E4B314DC7176006B16E2 /* DDTTYLogger.h in Headers */,
 				DC58E4AF14DC7176006B16E2 /* DDFileLogger.h in Headers */,
 			);
@@ -256,7 +268,7 @@
 		DC58E47F14DC70CF006B16E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = DC58E48214DC70CF006B16E2 /* Build configuration list for PBXProject "Lumberjack" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -283,6 +295,7 @@
 			files = (
 				DC58E4CD14DC8BE2006B16E2 /* InfoPlist.strings in Resources */,
 				DC58E4D914DC8BE2006B16E2 /* ViewController.xib in Resources */,
+				DCD6EAC816FFC0A800710668 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +310,10 @@
 				DC58E4AE14DC7176006B16E2 /* DDASLLogger.m in Sources */,
 				DC58E4B014DC7176006B16E2 /* DDFileLogger.m in Sources */,
 				DC58E4B214DC7176006B16E2 /* DDLog.m in Sources */,
+				DA3130A11844B265002E953B /* DDMultiFormatter.m in Sources */,
 				DC58E4B414DC7176006B16E2 /* DDTTYLogger.m in Sources */,
-				DC58E4B614DC7176006B16E2 /* ContextFilterLogFormatter.m in Sources */,
-				DC58E4B814DC7176006B16E2 /* DispatchQueueLogFormatter.m in Sources */,
+				DC58E4B614DC7176006B16E2 /* DDContextFilterLogFormatter.m in Sources */,
+				DC58E4B814DC7176006B16E2 /* DDDispatchQueueLogFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -359,10 +378,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -371,13 +395,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
